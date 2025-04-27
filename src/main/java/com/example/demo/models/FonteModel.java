@@ -1,6 +1,6 @@
 package com.example.demo.models;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -24,23 +24,20 @@ public class FonteModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Long id;
+    
+    @Column(name = "fon_descritivo", nullable = false, unique = true)
+    private String descritivo;
 
-    @Column(name = "tra_titulo")
-    private String titulo;
+    @Column(name = "fon_preco_sugerido")
+    private Float precoSugerido;
 
-    @Column(name = "tra_data_hora_entrega")
-    private LocalDateTime dataHoraEntrega;
+    @Column(name = "fon_data_lancamento", nullable = false)
+    private LocalDate dataLancamento;
 
-    @Column(name = "tra_descricao")
-    private String descricao;
+    @Column(name = "fon_potencia_real")
+    private Integer potenciaReal;
 
-    @Column(name = "tra_grupo")
-    private String grupo;
-
-    @Column(name = "tra_nota")
-    private Integer nota;
-
-    @Column(name = "tra_justificativa")
-    private String justificativa;
+    @Column(name = "fon_potencia_nominal", nullable = false)
+    private Integer potenciaNominal;
     
 }
