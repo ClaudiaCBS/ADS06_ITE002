@@ -15,10 +15,10 @@ public class TrabalhoService {
     private TrabalhoRepository trabalhoRepository;
 
     public TrabalhoModel cadastrarTrabalho(TrabalhoModel trabalho){
-        if (trabalho.getTitulo().isEmpty() || trabalho.getTitulo() == null) {
+        if (trabalho.getTitulo() == null || trabalho.getTitulo().isEmpty() ) {
             throw new IllegalArgumentException("O título está vazio!");
         }
-        if (trabalho.getGrupo().isEmpty() || trabalho.getGrupo() == null) {
+        if (trabalho.getGrupo() == null || trabalho.getGrupo().isEmpty()) {
             throw new IllegalArgumentException("O grupo está vazio!");
         }
         if (trabalho.getDataHoraEntrega() == null) {

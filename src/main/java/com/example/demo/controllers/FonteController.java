@@ -30,7 +30,7 @@ public class FonteController {
             FonteModel fonteSalva = this.fonteService.cadastrarFonte(fonte);
             return ResponseEntity.status(201).body(fonteSalva);
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
+            return ResponseEntity.badRequest().body("Descritivo deve ter pelo menos 4 caracteres!");
         } 
     }
 
@@ -40,7 +40,7 @@ public class FonteController {
     }
 
     @GetMapping("{potenciaMinima}/{dataMaxima}")
-    public ResponseEntity<List<FonteModel>> buscaPotenciaRealGreaterThanAndDataLancamentoLessThan (@PathVariable("potenciaMinims") Integer potenciaMinima, @PathVariable("dataMaxima") LocalDate dataMaxima) {
+    public ResponseEntity<List<FonteModel>> buscaPotenciaRealGreaterThanAndDataLancamentoLessThan (@PathVariable("potenciaMinima") Integer potenciaMinima, @PathVariable("dataMaxima") LocalDate dataMaxima) {
         return ResponseEntity.ok().body(fonteService.buscarPotencia(potenciaMinima, dataMaxima));
     }
     
