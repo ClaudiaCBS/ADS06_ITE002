@@ -43,30 +43,30 @@ Execute o seguinte comando no PostgreSQL (ou crie tabela similar no SGBD de sua 
 
 **1. Classe Entity (Model)** <br>
 Crie uma classe que mapeie a tabela criada. <br>
-| Página do Projeto                                                                   | Pasta            | 
-| :---------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe TrabalhoModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/TrabalhoModel.java) | Models | 
+| Link para Classe                                                                   | Pasta            | 
+| :--------------------------------------------------------------------------------- | :--------------- | 
+| [TrabalhoModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/TrabalhoModel.java) | Models | 
 
 
 **2. Interface Repository** <br>
 Crie um repositório para a classe criada no item 1 contendo uma consulta capaz de buscar todos os trabalhos que contenham uma palavra dentro de seu título com nota superior a um número inteiro. Tanto a palavra quanto o número devem ser recebidos como parâmetro do método. <br>
-| Página do Projeto                                                                           | Pasta            | 
-| :------------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para interface TrabalhoRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/TrabalhoRepository.java) | Repository | 
+| Link para Interface                                                                           | Pasta            | 
+| :-------------------------------------------------------------------------------------------- | :--------------- | 
+| [TrabalhoRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/TrabalhoRepository.java) | Repository | 
 
 
 **3. Classe Service** <br>
 Crie um serviço com 3 métodos: um para cadastro, um para listar todos os registros da tabela e outro para buscar usando a consulta criada no item 2. No cadastro verifique se o título e o grupo estejam preenchidos, lançando um erro em caso contrário. Ainda no cadastro, use a data/hora atual se a data/hora de entrega não estiver preenchida. <br>
-| Página do Projeto                                                                     | Pasta            | 
-| :------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para classe TrabalhoService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/TrabalhoService.java) | Services | 
+| Link para Classe                                                                     | Pasta            | 
+| :----------------------------------------------------------------------------------- | :--------------- | 
+| [TrabalhoService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/TrabalhoService.java) | Services | 
 
 
 **4. Classe Controller** <br>
 Crie um controller que atenda na URL “\trabalho” e contenha 3 rotas: uma para cadastro, outra para listar todos os registros e uma última para executar a busca por título e nota criada no item 2. <br>
-| Página do Projeto                                                                        | Pasta            | 
-| :--------------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe TrabalhoController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/TrabalhoController.java) | Controllers | 
+| Link para Classe                                                                        | Pasta            | 
+| :-------------------------------------------------------------------------------------- | :--------------- | 
+| [TrabalhoController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/TrabalhoController.java) | Controllers | 
 
 
 > Importante: Utilize java.time.LocalDateTime para mapear timestamp. <br>
@@ -98,30 +98,30 @@ Execute o seguinte comando no PostgreSQL (ou crie tabela similar no SGBD de sua 
 
 **1. Classe Entity (Model)** <br>
 Crie uma classe que mapeie a tabela criada. <br>
-| Página do Projeto                                                                   | Pasta            | 
-| :---------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe FonteModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/FonteModel.java) | Models | 
+| Link para Classe                                                                   | Pasta            | 
+| :--------------------------------------------------------------------------------- | :--------------- | 
+| [FonteModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/FonteModel.java) | Models | 
 
 
 **2. Interface Repository** <br>
 Crie um repositório para a classe criada no item 1 com uma consulta que busque todas as fontes cuja potência real seja superior a um valor passado como parâmetro e a data de lançamento seja inferior a um outro parâmetro. <br>
-| Página do Projeto                                                                           | Pasta            | 
-| :------------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para interface FonteRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/FonteRespository.java) | Repository | 
+| Link para Interface                                                                           | Pasta            | 
+| :-------------------------------------------------------------------------------------------- | :--------------- | 
+| [FonteRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/FonteRespository.java) | Repository | 
 
 
 **3. Classe Service** <br>
 Crie um serviço com 3 métodos: um para cadastro, um para listar todos os registros da tabela e outro para a consulta do item 2. No cadastro deve ser validado se o descritivo possui, no mínimo, 4 caracteres e se a potência real, se informada, possui valor menor ou igual à potência nominal. Caso ocorra uma falha de validação, retorne um erro do tipo "Bad Request" (400). <br>
-| Página do Projeto                                                                     | Pasta            | 
-| :------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para classe FonteService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/FonteService.java) | Services | 
+| Link para Classe                                                                     | Pasta            | 
+| :----------------------------------------------------------------------------------- | :--------------- | 
+| [FonteService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/FonteService.java) | Services | 
 
 
 **4. Classe Controller** <br>
 Crie um controller que atenda na URL "/fonte" e contenha 3 rotas: uma para cadastro, outra para listar todos os registros e uma última para buscar usando a consulta do item 2. <br>
-| Página do Projeto                                                                        | Pasta            | 
-| :--------------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe FonteController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/FonteController.java) | Controllers | 
+| Link para Classe                                                                        | Pasta            | 
+| :-------------------------------------------------------------------------------------- | :--------------- | 
+| [FonteController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/FonteController.java) | Controllers | 
 
 
 > Importante: Utilize java.time.LocalDate para mapear date. O comparador do Spring Data JPA correspondente a 'maior" (>) é "Greater Than". O comparador do Spring Data JPA correspondente a 'menor" (<) é "Less Than". <br>
@@ -154,30 +154,30 @@ Execute o seguinte comando no PostgreSQL (ou crie tabela similar no SGBD de sua 
 
 **1. Classe Entity (Model)** <br>
 Crie uma classe que mapeie a tabela criada. <br>
-| Página do Projeto                                                                   | Pasta            | 
-| :---------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe TarifaModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/TarifaModel.java) | Models | 
+| Link para Classe                                                                   | Pasta            | 
+| :--------------------------------------------------------------------------------- | :--------------- | 
+| [TarifaModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/TarifaModel.java) | Models | 
 
 
 **2. Interface Repository** <br>
 Crie um repositório para a classe criada no item 1 com uma consulta que busque todas as tarifas com um determinado nome, passado como parâmetro, cuja data de início seja inferior a um outro parâmetro. <br>
-| Página do Projeto                                                                           | Pasta            | 
-| :------------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para interface TarifaRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/TarifaRepository.java) | Repository | 
+| Link para Interface                                                                           | Pasta            | 
+| :-------------------------------------------------------------------------------------------- | :--------------- | 
+| [TarifaRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/TarifaRepository.java) | Repository | 
 
 
 **3. Classe Service** <br>
 Crie um serviço com 3 métodos: um para cadastro, um para listar todos os registros da tabela e outro para a consulta do item 2. No cadastro a data de início deve ser preenchida com a data atual se estiver em branco. Ainda no cadastro, deve ser validado se a alíquota possui um valor superior a zero e se a data de término é superior à data de início, caso seja informada (não validar se vier nula). Caso ocorra uma falha de validação, retorne um erro do tipo "Bad Request" (400). <br>
-| Página do Projeto                                                                     | Pasta            | 
-| :------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para classe TarifaService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/TarifaService.java) | Services | 
+| Link para Classe                                                                     | Pasta            | 
+| :----------------------------------------------------------------------------------- | :--------------- | 
+| [TarifaService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/TarifaService.java) | Services | 
 
 
 **4. Classe Controller** <br>
 Crie um controller que atenda na URL "/tarifa" e contenha 3 rotas: uma para cadastro, outra para listar todos os registros e uma última para buscar usando a consulta do item 2. <br>
-| Página do Projeto                                                                        | Pasta            | 
-| :--------------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe TarifaController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/TarifaController.java) | Controllers | 
+| Link para Classe                                                                        | Pasta            | 
+| :-------------------------------------------------------------------------------------- | :--------------- | 
+| [TarifaController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/TarifaController.java) | Controllers | 
 
 
 > Importante: Utilize java.time.Local Date para mapear date. O comparador do Spring Data JPA correspondente a "maior" (>) é "Greater Than". O comparador do Spring Data JPA correspondente a "menor" (<) é "Less Than". <br>
@@ -209,30 +209,30 @@ Execute o seguinte comando no PostgreSQL (ou crie tabela similar no SGBD de sua 
 
 **1. Classe Entity (Model)** <br>
 Crie uma classe que mapeie a tabela criada. <br>
-| Página do Projeto                                                                   | Pasta            | 
-| :---------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe PatrimonioModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/PatrimonioModel.java) | Models | 
+| Link para Classe                                                                   | Pasta            | 
+| :--------------------------------------------------------------------------------- | :--------------- | 
+| [PatrimonioModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/PatrimonioModel.java) | Models | 
 
 
 **2. Interface Repository** <br>
 Crie um repositório para a classe criada no item 1 com uma consulta que busque todas as propriedades adquiridas depois de uma data passada como parâmetro e com um valor inferior a um outro parâmetro. <br>
-| Página do Projeto                                                                           | Pasta            | 
-| :------------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para interface PatrimonioRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/PatrimonioRepository.java) | Repository | 
+| Link para Interface                                                                           | Pasta            | 
+| :-------------------------------------------------------------------------------------------- | :--------------- | 
+| [PatrimonioRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/PatrimonioRepository.java) | Repository | 
 
 
 **3. Classe Service** <br>
 Crie um serviço com 3 métodos: um para cadastro, um para listar todos os registros da tabela e outro para a consulta do item 2. No cadastro a data de aquisição deve ser preenchida com a data atual se estiver em branco. Ainda no cadastro, deve ser validado se o valor não é negativo, se informado, e se o tipo é válido (somente os valores "BI", "BM" ou "BF" devem ser aceitos). Caso ocorra uma falha de validação, retorne um erro do tipo "Bad Request" (400). <br>
-| Página do Projeto                                                                     | Pasta            | 
-| :------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para classe PatrimonioService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/PatrimonioService.java) | Services | 
+| Link para Classe                                                                     | Pasta            | 
+| :----------------------------------------------------------------------------------- | :--------------- | 
+| [PatrimonioService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/PatrimonioService.java) | Services | 
 
 
 **4. Classe Controller** <br>
 Crie um controller que atenda na URL "/patrimonio" e contenha 3 rotas: uma para cadastro, outra para listar todos os registros e uma última para buscar usando a consulta do item 2. <br>
-| Página do Projeto                                                                        | Pasta            | 
-| :--------------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe PatrimonioController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/PatrimonioController.java) | Controllers | 
+| Link para Classe                                                                        | Pasta            | 
+| :-------------------------------------------------------------------------------------- | :--------------- | 
+| [PatrimonioController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/PatrimonioController.java) | Controllers | 
 
 
 > Importante: Utilize java.time.Local Date para mapear date. O comparador do Spring Data JPA correspondente a "maior" (>) é "Greater Than". O comparador do Spring Data JPA correspondente a "menor" (<) é "Less Than". <br>
@@ -264,30 +264,30 @@ Execute o seguinte comando no PostgreSQL (ou crie tabela similar no SGBD de sua 
 
 **1. Classe Entity (Model)** <br>
 Crie uma classe que mapeie a tabela criada. <br>
-| Página do Projeto                                                                   | Pasta            | 
-| :---------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe AgendamentoModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/AgendamentoModel.java) | Models | 
+| Link para Classe                                                                   | Pasta            | 
+| :--------------------------------------------------------------------------------- | :--------------- | 
+| [AgendamentoModel.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/models/AgendamentoModel.java) | Models | 
 
 
 **2. Interface Repository** <br>
 Crie um repositório para a classe criada no item 1 com uma consulta que busque todas os agendamentos que iniciem depois de uma data/hora passada como parâmetro e contenham em suas instruções uma palavra passada em outro parâmetro. Se for usar o @Query, não use SQL. <br>
-| Página do Projeto                                                                           | Pasta            | 
-| :------------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para interface AgendamentoRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/AgendamentoRepository.java) | Repository | 
+| Link para Interface                                                                           | Pasta            | 
+| :-------------------------------------------------------------------------------------------- | :--------------- | 
+| [AgendamentoRepository.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/repository/AgendamentoRepository.java) | Repository | 
 
 
 **3. Classe Service** <br>
 Crie um serviço com 3 métodos: um para cadastro, um para listar todos os registros da tabela e outro para a consulta do item 2. No cadastro, se a data/hora de início vier nula, ela deve ser preenchida com a data/hora atual acrescidade de 1 dia. Ainda no cadastro, deve ser validado se o o valor e a duração prevista possuem valores superiores a zero, se informados (não validar nada se os valores vierem nulos). Gere um erro do tipo "bad request" (400) em caso uma validação falhe. <br>
-| Página do Projeto                                                                     | Pasta            | 
-| :------------------------------------------------------------------------------------ | :--------------- | 
-| [Link para classe AgendamentoService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/AgendamentoService.java) | Services | 
+| Link para Classe                                                                     | Pasta            | 
+| :----------------------------------------------------------------------------------- | :--------------- | 
+| [AgendamentoService.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/services/AgendamentoService.java) | Services | 
 
 
 **4. Classe Controller** <br>
 Crie um controller que atenda na URL "/agenda" e contenha 3 rotas: uma para cadastro, outra para listar todos os registros e uma última para buscar usando a consulta do item 2. <br>
-| Página do Projeto                                                                        | Pasta            | 
-| :--------------------------------------------------------------------------------------- | :--------------- | 
-| [Link para classe AgendamentoController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/AgendamentoController.java) | Controllers | 
+| Link para Classe                                                                        | Pasta            | 
+| :-------------------------------------------------------------------------------------- | :--------------- | 
+| [AgendamentoController.java](https://github.com/ClaudiaCBS/ADS06_ITE002/blob/main/src/main/java/com/example/demo/controllers/AgendamentoController.java) | Controllers | 
 
 
 > Importante: Utilize java.time.LocalDateTime para mapear timestamp. O comparador do Spring Data JPA correspondente a "maior" (>) é "Greater Than". O comparador do Spring Data JPA correspondente a "menor" (<) é "Less Than". <br>
