@@ -48,7 +48,7 @@ Atividades realizadas conforme o passo a passo apresentado pelo Professor Mineda
 Para iniciar um novo projeto, acesse o [Spring Initializr](https://start.spring.io/). As configurações seguem o padrão apresentado na figura abaixo:
 
 <p align="center">
-      <img src="/docs/Configuracao_Spring_Boot.png" alt="Configurações no Spring Initializr">
+      <img src="/docs/Spring_Boot_Configuracao.png" alt="Configuração Spring Initializr">
     
 </p>
 
