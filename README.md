@@ -12,8 +12,8 @@ Repositório para as atividades da disciplina Tópicos Especiais em Informática
 
 | Data | Link do Diretório |
 |:----------:|:-------------------------------------------------:|
-| 14/04/2025 | [BackEnd](https://github.com/ClaudiaCBS/ADS06_ITE002/backend/README.md) |
-| 03/06/2025 | [FrontEnd](https://github.com/ClaudiaCBS/ADS06_ITE002/frontend/README.md) |
+| 14/04/2025 | [BackEnd](https://github.com/ClaudiaCBS/ADS06_ITE002/tree/main/backend/README.md) |
+| 03/06/2025 | [FrontEnd](https://github.com/ClaudiaCBS/ADS06_ITE002/tree/main/frontend/README.md) |
 
 
 <br>
