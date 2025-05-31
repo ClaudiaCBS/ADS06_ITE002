@@ -43,6 +43,15 @@ Atividades realizadas conforme o passo a passo apresentado pelo Professor Mineda
 
 <br>
 
+## :hammer_and_wrench: Configurações do Projeto
+
+Para iniciar um novo projeto, acesse o [Spring Initializr](https://start.spring.io/). As configurações seguem o padrão apresentado na figura abaixo:
+
+<p align="center">
+      <img src="/docs/Configuracao_Spring_Boot.png" alt="Configurações no Spring Initializr">
+    
+</p>
+
 
 <br>
 
