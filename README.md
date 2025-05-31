@@ -57,7 +57,7 @@ Para iniciar um novo projeto, acesse o [Spring Initializr](https://start.spring.
 
 
 ## :book: Bibliografia  
-[Documentação Spring Boot](https://spring.io/projects/spring-boot). <br>
-[Iniciar um Projeto Spring Initializr](https://start.spring.io/).
+[Documentação Spring Boot](https://spring.io/projects/spring-boot).
+ <br>
 
 
