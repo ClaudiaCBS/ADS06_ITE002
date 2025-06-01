@@ -8,11 +8,11 @@
 		<version>3.5.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.gov.sp.fatec</groupId>
-	<artifactId>springboot3top20251</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>backvue</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot3top20251</name>
-	<description>Projeto Didático Spring Boot</description>
+	<name>backvue</name>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -37,14 +37,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-database-postgresql</artifactId>
 		</dependency>
 
 		<dependency>
