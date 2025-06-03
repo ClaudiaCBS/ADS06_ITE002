@@ -22,7 +22,7 @@ Repositório para as atividades da disciplina Tópicos Especiais em Informática
 
 ## :movie_camera: Vídeo Aulas
 
-Atividades realizadas conforme o passo a passo apresentado pelo Professor Mineda nos links disponibilizados abaixo:
+Atividades realizadas conforme o passo a passo dado em aula pelo Professor Mineda nos links listados abaixo:
 
 | Data | Tempo de Duração | Link do Vídeo no YouTube |
 |:----------:|:-----------------------|:-------------------------------------------------:|
